@@ -47,11 +47,6 @@ public class Doregister extends HttpServlet {
 			request.setAttribute("id", id);
 		}
 		
-		else if(service.findCustomer(id) != null){
-			page = "/view/error.jsp";
-			request.setAttribute("id", id);
-		}
-		
 		else{
 			service.addCustomer(customer);
 			page = "/view/registerSuccess.jsp";
