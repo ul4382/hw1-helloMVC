@@ -10,7 +10,7 @@
 	<h1>Your registered successfully.</h1>
 	<%-- JSP Expression Language --%>
 	<ul>
-		<li>ID: ${customer.id }</li>
+		<li>Id: ${customer.id }</li>
 		<li>password: ${customer.password }</li>
 		<li>gender: ${customer.gender }</li>
 		<li>Name: ${customer.name }</li>
