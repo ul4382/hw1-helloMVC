@@ -22,7 +22,7 @@ div.ex {
 	<div class="ex">
 		<form action="/hw1-helloMVC/doregister" method="post">
 			<table cellpadding="5">
-				<caption>Enter Information Here</caption>
+				<b>Enter Information Here</b>
 				<tr>
 					<td>아이디</td>
 					<td><input type="text" name="id" /></td>
