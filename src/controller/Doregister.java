@@ -42,16 +42,10 @@ public class Doregister extends HttpServlet {
 		
 		String page;
 		
-		if(id==null || password==null || name==null || gender==null || email==null){
-			page = "/view/error.jsp";
-			request.setAttribute("id", id);
-		}
+		service.addCustomer(customer);
+		page = "/view/registerSuccess.jsp";
+		request.setAttribute("customer", customer);
 		
-		else{
-			service.addCustomer(customer);
-			page = "/view/registerSuccess.jsp";
-			request.setAttribute("customer", customer);
-		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(page);
 		dispatcher.forward(request, response);
